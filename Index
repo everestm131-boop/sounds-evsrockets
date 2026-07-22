@@ -1,1 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
 
+<button onclick="playSound()">🔊 Play Sound</button>
+
+<audio id="sound" src="hallomoto.mp3"></audio>
+
+<script>
+function playSound() {
+  const sound = document.getElementById("sound");
+  sound.currentTime = 0;
+  sound.play();
+}
+</script>
+
+</body>
+</html>
